@@ -1,0 +1,249 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #7ab82a;
+}
+
+.clearfix::after {        /*清除浮动公共类*/
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {				/* 触发 hasLayout */
+	*zoom: 1;
+}
+
+.w980 {    				/*版心公共类*/
+	width: 980px;
+	margin: 0 auto;
+}
+input {				/*去掉input默认的边框*/
+	border: none;
+}
+button {				/*去掉botton默认的边框*/
+	border: none;
+}
+
+
+/*头部搜索区域*/
+.search-wrap {
+}
+.search-wrap .left {
+	width: 180px;
+	height: 62px;
+	background: url(../images/logo.png) 0 center no-repeat;
+	float: left;
+}
+.search-wrap  .right {
+	float: right;
+	margin-top: 20px;
+	margin-right: 9px;
+}
+.search-wrap  .right input {
+	width: 166px;
+	height: 28px;
+	border: 1px solid #ccc;
+	float: left;
+	border-radius: 5px 0 0 5px;
+	text-indent: 15px;
+}
+.search-wrap  .right button {
+	width: 31px;
+	height: 30px;
+	background: url(../images/button.png) 0 0 no-repeat;
+	float: left;
+	border-radius: 0 5px 5px 0;
+}
+
+/*导航区域*/
+.sh-nav {
+	background: url(../images/nav.png) 0 0 repeat-x;
+	border-top: 1px solid #e1e1e1;
+}
+.sh-nav ul li {
+	height: 55px;
+	width: 130px;
+	float: left;
+	background: url(../images/nav-border.png) right 0 no-repeat;
+	text-align: center;
+}
+.sh-nav li a {
+	line-height: 55px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+
+/*公告区域*/
+						/*左边公告区*/
+.notice {
+	height: 29px;
+	background-color: #fbfbfb;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+}
+.notice .notice-left {
+	font-size: 12px;
+	line-height: 29px;
+	float: left;
+}
+						/*右边分享区域*/
+.notice .notice-right {
+	height: 29px;
+	float: right;
+}
+.notice .notice-right .share:nth-child(1) a {
+	height: 29px;
+	width: 23px;
+	display: block;
+	background: url(../images/notice-share-1.png) 0 center no-repeat;
+}
+.notice .notice-right .share:nth-child(2) a {
+	height: 29px;
+	width: 23px;
+	display: block;
+	background: url(../images/notice-share-2.png) 0 center no-repeat;
+}
+.notice .notice-right .share:nth-child(3) a {
+	height: 29px;
+	width: 23px;
+	display: block;
+	background: url(../images/notice-share-3.png) 0 center no-repeat;
+}
+.notice .notice-right .share:nth-child(4) a {
+	height: 29px;
+	width: 23px;
+	display: block;
+	background: url(../images/notice-share-4.png) 0 center no-repeat;
+}
+.notice .notice-right li {
+	float: left;
+}
+
+ 	/*产品主体区域*/
+ .product {
+  	margin-top: 15px;
+}
+ .item {
+ 	height: 224px;
+ 	float: left;
+ 	border: 1px solid #ccc;
+ 	margin-right: 11px;
+ }
+ .product .item:nth-child(1) {
+	width: 310px;
+ }
+ .product .item:nth-child(2) {
+	width: 373px;
+ }
+ .product .item:nth-child(3) {
+	width: 268px;
+	margin-right: 0;
+ }
+.product .item-t {
+	height: 35px;
+	height: 35px;
+	font-weight: bold;
+	line-height: 35px;
+	font-size: 14px;
+}
+.product .item-t span {
+	display: block;	
+	background: url(../images/product-icon.png) 6px center no-repeat;
+	color: #7ab800;
+	float: left;
+	text-indent: 27px;
+}
+.product .item-b {	
+}
+
+.product .item .more {
+	float: right;
+	margin-right: 10px;
+}
+.item-list ul {
+	padding:0 20px;
+}
+.item-list ul li {
+	height: 27px;
+	line-height: 27px;
+	border-bottom: 1px dashed #ccc;
+	font-size: 14px;
+}
+.active {
+	color: red;
+	font-weight: bold;
+}
+.item-service ul {
+	padding-left: 28px;
+}
+.item-service ul li {
+	text-indent: 5px;
+	font-size: 14px;
+	border-left: 3px solid #98cb00;
+	margin-bottom: 9px;
+	line-height: 1;
+}
+.item-service p {
+	font-size: 12px;
+	line-height: 2;
+	text-indent: 29px;
+}
+
+/*底部区域*/
+footer .other dl {
+	height: 200px;
+	float: left;
+	display: block;
+	width: 110px;
+	margin-top: 10px;
+}
+footer {
+	background-color: #2d2d2d;
+	font-size: 12px;
+	height: 306px;
+}
+footer .other dd {
+	color: white;
+	padding-bottom: 10px;
+}
+footer .other a {
+	color: #707070;
+}
+footer .other a:hover {
+	color: #7ab82a;
+}
+.address {
+	height: 85px;
+	font-size: 12px;
+	border-top: 1px dashed #707070;
+}
+.address .w980 p {
+	text-align: center;
+	line-height: 30px;
+}
+	
+
+	
+
+
+	
+
+
+	
+
+
+
